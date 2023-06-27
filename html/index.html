@@ -3,8 +3,135 @@
 <head>
 	<meta charset="utf-8">
     <title>Herocorp</title>
+
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Nos feuilles CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
 	
+    <!-- Conteneur qui englobe le tout, pour centrage, ou dimensionnement -->
+    <div id="container">
+
+        <!-- En-tête -->
+        <header id="header">
+
+            <!--
+                Attribut alt (de la balise img) pour accessibilité et référencement
+                = texte alternatif (à l'image, si non visible)
+            -->
+            <img id="header-image" src="../images/hc.png" alt="Logo Hero Corp">
+            <!-- L'ordre des attributs n'a pas d'impact -->
+
+            <h1 id="header-title">Hero Corp<span>La série</span></h1>
+
+        </header>
+
+        <!-- contenu principal -->
+        <main id="main">
+
+            <!-- Permet de définir un contenu "indépendant" -->
+            <article id="presentation">
+
+                <!-- Un article peur contenu un header -->
+                <header>
+
+                    <h2>Présentation</h2>
+
+                    <img src="../images/hc-logo.png" alt="Hero Corp">
+
+                    <p class="default-text"><strong>Hero Corp</strong> est une série télévisée française fantastique et humoristique, produite par CALT, créée par Simon Astier et Alban Lenoir, réalisée par Simon Astier et écrite par Arnaud Joyet et Simon Astier. <strong>Hero Corp</strong> est une série télévisée française fantastique et humoristique, produite par CALT, créée par Simon Astier et Alban Lenoir, réalisée par Simon Astier et écrite par Arnaud Joyet et Simon Astier.</p>
+
+                </header>
+
+                <aside>
+                    <p>Les deux premières saisons ont été diffusées du 25 octobre 2008 au 29 janvier 2010 sur Comédie+ et rediffusées sur France 4 et Game One. La troisième saison a été diffusée sur France 4 du 21 octobre 2013 au 6 décembre 2013. La quatrième saison a été, quant à elle, diffusée du 19 décembre 2014 au 23 janvier 2015 sur France 4 et à partir du 9 février 2015 sur Game One. Une cinquième et dernière saison a été diffusée sur France 4 du 24 mai 2017 au 7 juin 2017.</p>
+                </aside>
+
+                <section>
+
+                    <h3>Synopsis</h3>
+
+                    <p class="default-text">À la suite d’une guerre dans les années 1980, il est décidé de créer l’agence Hero Corp, une organisation regroupant tous les super-héros afin de maintenir un climat de paix. Cette agence possède plusieurs sites secrets sur la planète et dans le département de la Lozère se trouvent les retraités, mis au rancart, démissionnaires, démasqués, pas-formés. Coupés du monde, ils peuvent retrouver une vie calme et paisible. Vingt ans après, ce calme paisible vole en éclats lorsque réapparaît The Lord.
+                    </p>
+
+                    <p class="default-text">Face au retour de The Lord, le plus grand super-vilain de l’Histoire, le village est démuni. Selon une prédiction, John est l'unique solution face à ce danger que Hero Corp préfère garder sous silence.
+                    </p>
+
+                    <p class="default-text">John arrive dans un village isolé pour aller enterrer sa tante. Il se rend compte que les habitants cachent quelque chose et qu’ils n’ont pas l’air décidés à le laisser partir.
+                    </p>
+
+                </section>
+
+            </article>
+
+            <section id="actors">
+
+                <h2>Principaux acteurs</h2>
+                <!-- une liste d'acteurs = ul / li -->
+                <ul id="actors-list">
+                    <!-- L'attribut rel="nooopener" est une sécurité qui empêche la 
+                        page ouverte avec le lien d'avoir accès 
+                        à la page qui contenait le lien et potentiellement de 
+                        remplacer cette page par un site malveillant.
+                        C'est encore un peu tôt pour comprendre car on n'a pas 
+                        encore vu Javascript, ni ce qu'il pourrait nous permettre 
+                        de faire, donc pour le moment, on va juste se dire que 
+                        c'est un bon réflexe à avoir :-)
+                        => pour en savoir plus https://blog.dareboost.com/fr/2017/03/target-blank-rel-noopener-securite-performance/
+                        
+                        On pourrait 
+                        aussi ne pas mettre l'attribut target="_blank" ni
+                        l'attribut rel="noopener" mais dans ce cas indiquer que 
+                        le lien va s'ouvrir dans un nouvel onglet.
+                    -->
+                    <li><a href="https://fr.wikipedia.org/wiki/Simon_Astier" target="_blank" rel="noopener">simon astier</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Alban_Lenoir" target="_blank" rel="noopener">alban lenoir</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/S%C3%A9bastien_Lalanne" target="_blank" rel="noopener">sébastien lalanne</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/G%C3%A9rard_Darier" target="_blank" rel="noopener">gérard darier</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Agn%C3%A8s_Boury" target="_blank" rel="noopener">agnès boury</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Podetti" target="_blank" rel="noopener">françois podetti</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Arnaud_Joyet" target="_blank" rel="noopener">arnaud joyet</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Philippe_No%C3%ABl" target="_blank" rel="noopener">philippe noël</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/%C3%89tienne_Fague" target="_blank" rel="noopener">etienne fague</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Aurore_Pourteyron" target="_blank" rel="noopener">aurore pourteyron</a></li>
+                </ul>
+            </section>
+
+            <section id="en-images">
+
+                <h2>Quelques images de la série</h2>
+
+                <div id="pictures">
+
+                    <div class="picture">
+                        Image 1
+                    </div>
+
+                    <div class="picture">
+                        Image 2
+                    </div>
+
+                    <div class="picture">
+                        Image 3
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Pied de page-->
+        <footer id="footer">
+            Présentation de Hero Corp, la série &copy; Hero Corp
+        </footer>
+
+    </div>
 </body>
 </html>

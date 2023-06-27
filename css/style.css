@@ -1,0 +1,161 @@
+body {
+    background-color: #d3d3d3;
+    /* La police pour la page */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+strong {
+    /* Remettre "en ordre" ce que reset.css a redéfini */
+    font-weight: bold;
+}
+
+#container {
+    background-color: white;
+    border: 1px solid black;
+    /* Une largeur est nécessaire pour l'usage de margin: auto */
+    width: 800px;
+    /* Syntaxe raccourcie à deux valeurs = haut/bas droite/gauche */
+    margin: 2em auto;
+
+    /*
+    /!\ Le paddgin (marge intérieur, LE GRAS !)
+    va créer un espacement entre le conteneur et tous ses enfants
+    */
+    padding: 1em;
+
+    /* La plupart des textes sont centrés */
+    text-align: center;
+
+}
+/* Grâce à mon nommage précis, j'identifie à quoi ça correspond dans mon HTML */
+#header-title {
+    font-size: 3em;
+
+    /* On définit une bordure générale */
+    border: 2px solid darkred;
+    /* Annuler les bordures droite et gauche */
+    border-right-width: 0;
+    border-left-width: 0;
+
+    padding: 0.2em 0;
+    margin: 0.3em 0;
+}
+
+#header-title span {
+    color: white;
+    background-color: black;
+    font-size: 0.4em;
+
+    /*
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    */
+
+    padding: 5px 14px;
+    margin-left: 1em;
+}
+
+#presentation {
+    background-color: #eeeeee;
+    padding: 1em;
+
+}
+
+/* Propriétés communes aux deux */
+#presentation, #actors {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#presentation h2 {
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+#presentation img {
+    width: 100px;
+    margin: 0;
+    /* https://cssreference.io/property/float/ */
+    float: right;
+}
+
+#presentation aside {
+    border-top: 1px solid black;
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    font-style: italic;
+}
+
+#presentation section h3 {
+    color: darkred;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+p {
+    /*
+    Interligne par défaut pour tous les paragraphes
+    Pas d'unité nécessaire
+    */
+    line-height: 1.4;
+
+    /* Et une marge basse par défaut */
+    margin-bottom: 1em;
+}
+
+.default-text {
+    text-align: left;
+}
+
+#actors-list li a {
+    background-color: lightgray;
+    border-radius: 12px;
+    color: darkred;
+    display: block;
+    font-size: 0.8em;
+    padding: 0.5em 0;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+/*
+Changer le style au survol d'un élément avec la souris (ici, notre lien)
+Voir : https://developer.mozilla.org/fr/docs/Web/CSS/:hover
+*/
+#actors-list li a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+#actors h2 {
+    margin: 2em 0;
+}
+
+#en-images #pictures {
+    display: flex;
+    flex-direction: column;
+    /* Dispose les enfants au centre, et que cela réduit leurs dimensions au contenu */
+    align-items: center;
+}
+
+#en-images .picture {
+    border: 1px solid gray;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #EEEEEE;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin-top: 1em;
+}
